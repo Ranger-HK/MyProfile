@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation Case 02</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <style>
+    main {
+      overflow-x: hidden;
+      overflow-y: hidden;
+      width: 1920px;
+      height: 930px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    main > section {
+      width: 400%;
+      height: 100%;
+      display: flex;
+      animation-name: slide;
+      animation-duration: 10s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+
+    main > section > div {
+      width: 100%;
+    }
+
+    section > div:nth-child(1) {
+      background: url("assets/images/1.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    section > div:nth-child(2) {
+      background: url("assets/images/2.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    section > div:nth-child(3) {
+      background: url("assets/images/3.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    section > div:nth-child(4) {
+      background: url("assets/images/4.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    @keyframes slide {
+      0% ,20%{
+        transform: translateX(0);
+
+      }
+      25% ,45%{
+        transform: translateX(-25%);
+      }
+      50%,70% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(-75%);
+      }
+
+    }
+  </style>
+</head>
+<body>
+<main>
+  <section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+</main>
+</body>
+</html>

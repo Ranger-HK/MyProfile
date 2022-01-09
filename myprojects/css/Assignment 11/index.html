@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="assets/css/normalize.css"/>
+  <style>
+    body {
+      overflow: hidden;
+    }
+
+    #sky-div {
+      background-image: url(assets/image/sky.jpg);
+      height: 100vh;
+      background-repeat: no-repeat;
+
+    }
+
+    #cont {
+      position: absolute;
+      width: 10000px;
+      height: 450px;
+      bottom: 8px;
+      animation-name: right_to_left;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-duration: 18s;
+
+    }
+
+
+    #city-div {
+      position: relative;
+      background-image: url(assets/image/city.png);
+      height: 50vh;
+      background-repeat: repeat-x;
+      background-size: 1600px;
+
+    }
+
+    #road {
+      position: relative;
+      background-image: url(assets/image/road.jpg);
+      height: 292px;
+      background-repeat: repeat-x;
+      background-size: contain;
+      top: 270px;
+
+
+    }
+
+    @keyframes right_to_left {
+      from {
+        margin-left: 0px;
+
+      }
+      to {
+        margin-left: -8000px;
+      }
+    }
+
+
+    #car {
+      position: absolute;
+      background-image: url(assets/image/car.png);
+      width: 500px;
+      height: 200px;
+      /* background-color: red; */
+      background-repeat: no-repeat;
+      background-size: 100%;
+      top: 550px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 100;
+    }
+
+
+    #wheel1 {
+      position: relative;
+      background-image: url(assets/image/wheel.png);
+      width: 95px;
+      height: 95px;
+      background-size: 95px;
+      background-repeat: no-repeat;
+      top: 105px;
+      left: 42px;
+
+      animation-name: wheel;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-duration: 17s;
+      animation-delay: 1s;
+    }
+
+    #wheel2 {
+      position: relative;
+      background-image: url(assets/image/wheel.png);
+      width: 95px;
+      height: 95px;
+      background-size: 95px;
+      background-repeat: no-repeat;
+      top: 10px;
+      left: 347px;
+
+      animation-name: wheel;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-duration: 17s;
+      animation-delay: 1s;
+    }
+
+    @keyframes wheel {
+      from {
+        transform: rotate(-360deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+
+    }
+  </style>
+  <title>Car Animation</title>
+</head>
+<body>
+
+<div id="car-cont">
+  <div id="car">
+    <div id="wheel1"></div>
+    <div id="wheel2"></div>
+  </div>
+</div>
+
+<div id="sky-div">
+  <div id="cont">
+    <div id="city-div">
+      <div id="road"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

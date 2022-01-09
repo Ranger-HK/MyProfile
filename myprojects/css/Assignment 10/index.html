@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <style>
+    section{
+      height: 100vh;
+      position: relative;
+    }
+    section > div{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: 5px solid cornflowerblue;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      animation-name: drop;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+
+    }
+
+    @keyframes drop{
+      from{
+        width: 50px;
+        height: 50px;
+      }
+      to{
+        width: 400px;
+        height: 400px;
+        border: 3px solid transparent;
+      }
+    }
+  </style>
+  <title>Water Drop Animation</title>
+</head>
+<body>
+<section>
+  <div>
+
+  </div>
+</section>
+</body>
+</html>

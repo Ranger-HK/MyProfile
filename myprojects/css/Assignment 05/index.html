@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Web Layout - Case 2</title>
+    <meta content="IJSE, CMJD, Basic Web Layout, RWAD" name="keywords">
+    <meta content="This is for demonstrate how to make a simple web page using css positions" name="description">
+    <meta content="Institute of Software Engineering" name="author">
+    <meta content="Institute of Software Engineering" name="owner">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="assets/css/fonts/css/all.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+
+    <style>
+        /*header start*/
+        header {
+            position: relative;
+            height: 80px;
+            box-shadow: -2px 6px 9px -4px #917a7a;
+        }
+
+        header > img {
+            width: 213px;
+            margin: 21px;
+        }
+
+        header > ul {
+            position: absolute;
+            right: 30px;
+            bottom: 0;
+            font-size: 24px;
+            font-family: 'Lobster', cursive;
+            list-style: none;
+            color: #4a3a3a;
+        }
+
+        header > ul > li {
+            padding: 0 10px 0 10px;
+            display: inline-block;
+        }
+
+        header > ul > li:hover {
+            cursor: pointer;
+            color: red;
+        }
+
+        /*  header end*/
+        body > main {
+            position: relative;
+        }
+
+        /* main content start*/
+        main > nav {
+            width: 270px;
+            background-color: #4d1da7;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            color: white;
+        }
+
+        main > nav > ul {
+            list-style: none;
+            font-size: 25px;
+            margin-top: 39px;
+        }
+
+        main > nav > ul > li {
+            padding-bottom: 30px;
+            font-family: 'Lobster', cursive;
+        }
+
+        main > nav > ul > li > a {
+            text-decoration: none;
+            color: #f3f1f1;
+            padding-bottom: 4px;
+            margin-left: 13px;
+        }
+
+        main > nav > ul > li > a:hover {
+            color: orange;
+        }
+
+        main > section {
+            margin-left: 270px;
+            padding: 10px;
+            min-height: 587px;
+        }
+
+        /* main> section content started*/
+        main > section > section {
+            height: 300px;
+            position: relative;
+            display: flex;
+        }
+
+        main > section > section > div {
+            flex-grow: 1;
+        }
+
+        main > section > section > div:nth-child(1) {
+            background-image: url("assets/image/3.png");
+            background-size: cover;
+        }
+
+        main > section > section > div:nth-child(2) {
+            background-image: url("assets/image/3.png");
+            background-size: cover;
+        }
+
+        main > section > section > div:nth-child(3) {
+            background-image: url("assets/image/3.png");
+            background-size: cover;
+        }
+
+        /*main> section content end*/
+        /* main content end*/
+
+
+        /*footer content started*/
+        body > footer {
+            height: 60px;
+            background-color: #585151;
+        }
+
+        body > footer > p {
+            margin-top: 0;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        /*footer content ended*/
+
+
+        @media all and (max-width: 425px) {
+            header {
+                height: 87px;
+            }
+
+            header > img {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 10px;
+            }
+
+            header > ul {
+                right: 30px;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                font-size: 19px;
+                width: max-content;
+                margin: auto;
+                padding-left: 0;
+            }
+
+            main > nav {
+                display: none;
+            }
+
+            main > section {
+                margin-left: 0;
+            }
+
+            main > section > section {
+                flex-direction: column;
+                height: 699px;
+            }
+        }
+        @media all and (min-width: 425px) and (max-width: 768px){
+            header {
+                height: 87px;
+            }
+            header > img {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 10px;
+            }
+            header > ul {
+                right: 30px;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                font-size: 19px;
+                width: max-content;
+                margin: auto;
+                padding-left: 0;
+            }
+            main > nav {
+                display: none;
+            }
+            main > section {
+                margin-left: 0;
+            }
+
+            main > section > section {
+                flex-direction: column;
+                height: 1665px;
+            }
+        }
+        @media all and (min-width: 768px) and (max-width: 1024px){
+            main > nav {
+                width: 162px;
+            }
+            main > section {
+                margin-left: 160px;
+
+            }
+            main > nav > ul {
+                font-size: 24px;
+            }
+            main > section > section {
+                flex-direction: column;
+                height: 1894px;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img alt="" src="assets/image/ijselogo.png">
+
+    <ul>
+        <li>Home</li>
+        <li>Service</li>
+        <li>Contacts</li>
+        <li>About Us</li>
+    </ul>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+            <li><i class="fas fa-globe-africa"></i><a href="index-1.html">Service</a></li>
+            <li><i class="fas fa-id-badge"></i><a href="index-2.html">Contacts</a></li>
+            <li><i class="fas fa-info-circle"></i><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+
+        <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
+            suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+            porro reprehenderit temporibus?</p>
+        <p>Cum cupiditate fuga fugiat inventore laudantium officiis possimus recusandae similique ut, voluptate! Ad amet
+            asperiores dicta doloribus ducimus exercitationem illo ipsum molestiae, nam nobis officiis provident
+            quibusdam sed suscipit tempore!</p>
+        <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
+            suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+            porro reprehenderit temporibus?</p>
+        <p>Cum cupiditate fuga fugiat inventore laudantium officiis possimus recusandae similique ut, voluptate! Ad amet
+            asperiores dicta doloribus ducimus exercitationem illo ipsum molestiae, nam nobis officiis provident
+            quibusdam sed suscipit tempore!</p>
+        <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
+            suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+            porro reprehenderit temporibus?</p>
+        <p>Cum cupiditate fuga fugiat inventore laudantium officiis possimus recusandae similique ut, voluptate! Ad amet
+            asperiores dicta doloribus ducimus exercitationem illo ipsum molestiae, nam nobis officiis provident
+            quibusdam sed suscipit tempore!</p>
+        <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
+            suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+            porro reprehenderit temporibus?</p>
+        <p>Cum cupiditate fuga fugiat inventore laudantium officiis possimus recusandae similique ut, voluptate! Ad amet
+            asperiores dicta doloribus ducimus exercitationem illo ipsum molestiae, nam nobis officiis provident
+            quibusdam sed suscipit tempore!</p>
+        <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
+            suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+            porro reprehenderit temporibus?</p>
+        <p>Cum cupiditate fuga fugiat inventore laudantium officiis possimus recusandae similique ut, voluptate! Ad amet
+            asperiores dicta doloribus ducimus exercitationem illo ipsum molestiae, nam nobis officiis provident
+            quibusdam sed suscipit tempore!</p>
+        <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
+            suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+            porro reprehenderit temporibus?</p>
+        <p>Cum cupiditate fuga fugiat inventore laudantium officiis possimus recusandae similique ut, voluptate! Ad amet
+            asperiores dicta doloribus ducimus exercitationem illo ipsum molestiae, nam nobis officiis provident
+            quibusdam sed suscipit tempore!</p>
+        <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
+            suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+            porro reprehenderit temporibus?</p>
+        <p>Cum cupiditate fuga fugiat inventore laudantium officiis possimus recusandae similique ut, voluptate! Ad amet
+            asperiores dicta doloribus ducimus exercitationem illo ipsum molestiae, nam nobis officiis provident
+            quibusdam sed suscipit tempore!</p>
+        <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
+            suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+            porro reprehenderit temporibus?</p>
+        <p>Cum cupiditate fuga fugiat inventore laudantium officiis possimus recusandae similique ut, voluptate! Ad amet
+            asperiores dicta doloribus ducimus exercitationem illo ipsum molestiae, nam nobis officiis provident
+            quibusdam sed suscipit tempore!</p>
+        <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
+            suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+            porro reprehenderit temporibus?</p>
+        <p>Cum cupiditate fuga fugiat inventore laudantium officiis possimus recusandae similique ut, voluptate! Ad amet
+            asperiores dicta doloribus ducimus exercitationem illo ipsum molestiae, nam nobis officiis provident
+            quibusdam sed suscipit tempore!</p>
+        <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
+            suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+            porro reprehenderit temporibus?</p>
+        <p>Cum cupiditate fuga fugiat inventore laudantium officiis possimus recusandae similique ut, voluptate! Ad amet
+            asperiores dicta doloribus ducimus exercitationem illo ipsum molestiae, nam nobis officiis provident
+            quibusdam sed suscipit tempore!</p>
+        <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
+            suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+            porro reprehenderit temporibus?</p>
+        <p>Cum cupiditate fuga fugiat inventore laudantium officiis possimus recusandae similique ut, voluptate! Ad amet
+            asperiores dicta doloribus ducimus exercitationem illo ipsum molestiae, nam nobis officiis provident
+            quibusdam sed suscipit tempore!</p>
+
+
+    </section>
+</main>
+
+<footer>
+    <p><small>Developed By Ravindu prathibha</small></p>
+</footer>
+
+
+</body>
+</html>
