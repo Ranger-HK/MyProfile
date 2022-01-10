@@ -299,7 +299,7 @@ main > section:nth-child(1) > div > div > div > a > img {
 
 #slider {
     height: 600px;
-    width: 1201px;
+    width: 1500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -396,7 +396,7 @@ main > section:nth-child(1) > div > div > div > a > img {
 /*PROJECT*/
 
 #Project {
-    height: 100vh;
+    height: 80vh;
     background-color: #212428;
     text-decoration: underline white;
 
@@ -419,7 +419,7 @@ main > section:nth-child(1) > div > div > div > a > img {
 
 #proSlider{
     height: 1000px;
-    width: 1001px;
+    width: 1500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -473,11 +473,11 @@ main > section:nth-child(1) > div > div > div > a > img {
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     border: 1px solid white;
+    margin-top: -171px
 }
 
 
@@ -506,7 +506,7 @@ main > section:nth-child(1) > div > div > div > a > img {
 /*ASSIGNMENTS*/
 
 #Assignments {
-    height: 100vh;
+    height: 80vh;
     background-color: #212428;
     text-decoration: underline white;
 
@@ -582,8 +582,8 @@ main > section:nth-child(1) > div > div > div > a > img {
     position: absolute;
     width: 751px;
     height: 719px;
-    left: 90px;
-    top: 6626px;
+    left: 107px;
+    top: 6223px;
     border-radius: 20px;
 
 }
@@ -662,6 +662,67 @@ main > section:nth-child(1) > div > div > div > a > img {
     margin-left: 95px;
 }
 
+#social_icon_div {
+    width: 816px;
+    height: 202px;
+    background: #212428;
+    box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    position: relative;
+    margin-left: 1101px;
+    display: inline-flex;
+    left: -3px;
+    top: 35px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 48px;
+}
+
+.icon-cont-div {
+    position: relative;
+    width: 79px;
+    height: 79px;
+    border-radius: 15px;
+    background: #212428;
+    box-shadow: -1px -1px 4px rgba(196, 207, 222, 0.2);
+}
+
+.icon-cont-div > a > svg {
+    position: relative;
+    top: 12px;
+    bottom: 0;
+    left: 14px;
+    right: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    fill: white;
+}
+
+#icon_1:hover {
+    background-color: #0e76a8;
+}
+
+#icon_2:hover {
+    background-color: #1da1f2;
+}
+
+#icon_3:hover {
+    background-color: #1c92fe;
+}
+
+#icon_4:hover {
+    background-color: #320032;
+}
+
+#icon_5:hover {
+    background-color: #fe1c1c;
+}
+bottom_card {
+
+}
+
 
 
 /*FOOTER*/
@@ -671,7 +732,7 @@ main > section:nth-child(1) > div > div > div > a > img {
     width: 1973px;
     height: 2px;
     left: 24px;
-    top: 7728px;
+    top: 7308px;
     background: #ffffff;
     margin-left:39px;
 }
