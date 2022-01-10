@@ -312,7 +312,6 @@ main > section:nth-child(1) > div > div > div > a > img {
 }
 
 #slid-con-div {
-
     width: 3000px;
     display: flex;
     justify-content: space-evenly;
@@ -323,6 +322,7 @@ main > section:nth-child(1) > div > div > div > a > img {
     animation: scroll 10s linear alternate;
     animation-iteration-count: infinite;
     animation-delay: 2s;
+    cursor: pointer;
 }
 
 @keyframes scroll {
@@ -415,6 +415,91 @@ main > section:nth-child(1) > div > div > div > a > img {
     color: #EFF0F0;
 
 }
+
+#proSlider{
+    height: 1000px;
+    width: 1001px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 30px;
+    overflow: hidden;
+
+}
+
+#proSlid-con-div {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+    flex-basis: 3107px;
+    margin-left: 1828px;
+    animation: scroll 10s linear alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    cursor: pointer;
+}
+
+@keyframes scroll {
+    from {
+        margin-left: 1828px;
+    }
+    to {
+        margin-left: -1821px;
+    }
+}
+
+.proSlid-div {
+    position: relative;
+    height: 474px;
+    width: 551px;
+    background: #212428;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px 5px rgb(0 0 0.50%)
+}
+
+
+.pro-div {
+    height: 470px;
+    width: 539px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid white;
+}
+
+
+#pro_1 {
+    background-image: url("../image/projects/Npro1.png");
+}
+
+#pro_2 {
+    background-image: url("../image/projects/Npro2.png");
+}
+
+#pro_3 {
+    background-image: url("../image/projects/Npro3.png");
+}
+
+#pro_4 {
+    background-image: url("../image/projects/Npro4.png");
+}
+
+#pro_5 {
+    background-image: url("../image/projects/Npro5.png");
+}
+
 
 
 /*ASSIGNMENTS*/
