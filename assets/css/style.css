@@ -149,6 +149,37 @@ main > section:nth-child(1) > div > div > div > a > img {
     background: #F1C40F;
 }
 
+#underline{
+    position: absolute;
+    width: 210px;
+    height: 4px;
+    left: 565px;
+    top: 623px;
+    background: #ffffff;
+}
+
+#circle {
+    width: 12px;
+    height: 12px;
+    margin-top: -492px;
+    margin-left: 537px;
+    background: #f7f7f7;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 100%;
+}
+
+#circle2 {
+    width: 12px;
+    height: 12px;
+    margin-top: -12px;
+    margin-left: 791px;
+    background: #f7f7f7;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 100%;
+
+}
+
+
 /*ABOUT ME*/
 
 #aboutMe {
@@ -587,6 +618,14 @@ main > section:nth-child(1) > div > div > div > a > img {
     border-radius: 20px;
 
 }
+#imgC > div > p {
+    font-size: 45px;
+    font-weight: 300;
+    color: white;
+    margin-top: 145px;
+    margin-left: 30px;
+    text-shadow: 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
 
 #bottom {
     position: relative;
@@ -722,7 +761,6 @@ main > section:nth-child(1) > div > div > div > a > img {
 bottom_card {
 
 }
-
 
 
 /*FOOTER*/
