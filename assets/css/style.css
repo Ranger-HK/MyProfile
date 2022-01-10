@@ -277,7 +277,7 @@ main > section:nth-child(1) > div > div > div > a > img {
 #Skills {
     height: 80vh;
     background-color: #212428;
-    text-decoration: underline white;
+
 
 }
 
@@ -286,6 +286,7 @@ main > section:nth-child(1) > div > div > div > a > img {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: underline white;
 
 }
 
@@ -555,9 +556,9 @@ main > section:nth-child(1) > div > div > div > a > img {
 /*CONTACTS*/
 
 #Contacts {
-    height: 100vh;
+    height: 130vh;
     background-color: #212428;
-    text-decoration: underline white;
+
 
 }
 
@@ -566,6 +567,7 @@ main > section:nth-child(1) > div > div > div > a > img {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: underline white;
 
 }
 
@@ -575,7 +577,169 @@ main > section:nth-child(1) > div > div > div > a > img {
     color: #EFF0F0;
 
 }
+#imgC {
+    background-image: url("../image/social/imgC.png");
+    position: absolute;
+    width: 751px;
+    height: 719px;
+    left: 90px;
+    top: 6626px;
+    border-radius: 20px;
+
+}
+
+#bottom {
+    position: relative;
+    width: 826px;
+    border-radius: 20px;
+    display: block;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-left: 1105px;
+    margin-top: 39px;
+    height: 500px;
+}
+
+
+.bottom_card {
+    width: 800px;
+    height: 209px;
+    background: #212428;
+    background: #212428;
+    box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    position: relative;
+}
+
+
+.icon_title {
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon_title > i {
+    font-size: 50px;
+    color: #c4cfde;
+    margin: 0;
+    margin-left: -599px;
+    margin-top: 48px;
+    font-size: 60px
+
+}
+
+
+.icon_title > i:nth-child(2) {
+    position: absolute;
+    transform: rotate(45deg);
+    top: -8px;
+    color: #c4cfde;
+    font-size: 35px;
+    right: 145px;
+}
+
+.icon_title > h1 {
+    font-size: 50px;
+    color: #c4cfde;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.bottom_card > div:nth-child(2) {
+    position: relative;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 28px;
+    text-align: center;
+    color: #c4cfde;
+    bottom: -100px;
+    top: -5px;
+    margin-left: 95px;
+}
 
 
 
+/*FOOTER*/
+
+#line1{
+    position: absolute;
+    width: 1973px;
+    height: 2px;
+    left: 24px;
+    top: 7728px;
+    background: #ffffff;
+    margin-left:39px;
+}
+
+
+#footer {
+    background-color: #212428;
+    height: 250px;
+}
+
+.footer-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pic {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #fec51c;
+    border-radius: 100%;
+    background-image: url(../image/social/MY.jpeg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+#footer_p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 29px;
+    color: #ffffff;
+
+}
+
+#footer_p > a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#footer_p > a:visited{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#atlas {
+    background-color: transparent;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 64px;
+    color: #ff9f28;
+    margin-top: -332px;
+    margin-left: 865px;
+}
+
+#coporation {
+    background-color: transparent;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 64px;
+    color: #0095ff;
+    margin-top: -121px;
+    margin-left: 1048px;
+}
 
