@@ -287,8 +287,8 @@ main > section:nth-child(1) > div > div > div > a > img {
     text-align: center;
     margin-left: 1529px;
     margin-top: 220px;
-    margin-right: 51px;
     cursor: pointer;
+    margin-right: 0px;
 }
 
 #cv-btn:hover {
@@ -539,7 +539,7 @@ main > section:nth-child(1) > div > div > div > a > img {
 #Assignments {
     height: 80vh;
     background-color: #212428;
-    text-decoration: underline white;
+
 
 }
 
@@ -548,6 +548,7 @@ main > section:nth-child(1) > div > div > div > a > img {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: underline white;
 
 }
 
@@ -556,6 +557,227 @@ main > section:nth-child(1) > div > div > div > a > img {
     font-size: 62px;
     color: #EFF0F0;
 
+}
+
+#ACircle {
+    width: 450px;
+    height: 450px;
+    margin-top: 99px;
+    margin-left: 121px;
+    background: #ffffff;
+    border-radius: 100%;
+}
+
+.dash{
+    box-sizing: content-box;
+    height: 10px;
+    overflow: visible;
+    width: 372px;
+    margin-top: -88px;
+    line-height: 31px;
+
+}
+#A1{
+    top: 4493px;
+    left: 145px;
+    margin: 10px;
+    color: #000000;
+    position: absolute;
+    font-size: 27px;
+}
+
+#Li {
+    box-sizing: content-box;
+    height: 10px;
+    overflow: visible;
+    width: 372px;
+    margin-top: -88px;
+    top: 4882px;
+    left: 876px;
+    position: absolute;
+}
+
+
+
+#all {
+    margin-top: -56px;
+    top: 4383px;
+    left: 59px;
+    position: absolute;
+}
+
+
+.assignment-btn1 {
+    position: relative;
+    width: 469px;
+    height: 61px;
+    border: 5px solid #fec51c;
+    background-color: transparent;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px 5px rgb(0 0 0);
+    color: #ffffff;
+    line-height: 31px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 1364px;
+    margin-top: -109px;
+    margin-right: 72px;
+    cursor: pointer;
+
+}
+.assignment-btn2 {
+    position: relative;
+    width: 469px;
+    height: 61px;
+    border: 5px solid #fec51c;
+    background-color: transparent;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px 5px rgb(0 0 0);
+    color: #ffffff;
+    line-height: 31px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 1368px;
+    margin-top: 27px;
+    margin-right: 72px;
+    cursor: pointer;
+}
+
+.assignment-btn3 {
+    position: relative;
+    width: 469px;
+    height: 61px;
+    border: 5px solid #fec51c;
+    background-color: transparent;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px 5px rgb(0 0 0);
+    color: #ffffff;
+    line-height: 31px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 1368px;
+    margin-top: 27px;
+    margin-right: 72px;
+    cursor: pointer;
+}
+.assignment-btn4 {
+    position: relative;
+    width: 469px;
+    height: 61px;
+    border: 5px solid #fec51c;
+    background-color: transparent;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px 5px rgb(0 0 0);
+    color: #ffffff;
+    line-height: 31px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 1368px;
+    margin-top: 27px;
+    margin-right: 72px;
+    cursor: pointer;
+}
+.assignment-btn5 {
+    position: relative;
+    width: 469px;
+    height: 61px;
+    border: 5px solid #fec51c;
+    background-color: transparent;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px 5px rgb(0 0 0);
+    color: #ffffff;
+    line-height: 31px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 1368px;
+    margin-top: 27px;
+    margin-right: 72px;
+    cursor: pointer;
+}
+.assignment-btn6 {
+    position: relative;
+    width: 469px;
+    height: 61px;
+    border: 5px solid #fec51c;
+    background-color: transparent;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px 5px rgb(0 0 0);
+    color: #ffffff;
+    line-height: 31px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 1368px;
+    margin-top: 27px;
+    margin-right: 72px;
+    cursor: pointer;
+}
+
+.assignment-btn1:hover {
+    background-color: #FEC51C;
+}
+.assignment-btn2:hover {
+    background-color: #FEC51C;
+}
+.assignment-btn3:hover {
+    background-color: #FEC51C;
+}
+.assignment-btn4:hover {
+    background-color: #FEC51C;
+}
+.assignment-btn5:hover {
+    background-color: #FEC51C;
+}
+.assignment-btn6:hover {
+    background-color: #FEC51C;
+}
+
+.assignment-btn1> span1 {
+    text-transform: capitalize;
+    position: relative;
+    right: 0px;
+    letter-spacing: 5px;
+}
+assignment-btn2> span2 {
+    text-transform: capitalize;
+    position: relative;
+    right: 0px;
+    letter-spacing: 5px;
+}
+assignment-btn3> span3 {
+    text-transform: capitalize;
+    position: relative;
+    right: 0px;
+    letter-spacing: 5px;
+}
+assignment-btn4> span4 {
+    text-transform: capitalize;
+    position: relative;
+    right: 0px;
+    letter-spacing: 5px;
+}
+assignment-btn5> span5 {
+    text-transform: capitalize;
+    position: relative;
+    right: 0px;
+    letter-spacing: 5px;
+}
+assignment-btn6> span6 {
+    text-transform: capitalize;
+    position: relative;
+    right: 0px;
+    letter-spacing: 5px;
 }
 
 
