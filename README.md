@@ -29,7 +29,7 @@
 ## :link: **Links**
 
 - Website : [Click Here](https://prathibha2021.000webhostapp.com/)
-- GitHub-Pages : [Click Here](https://github.com/Ranger-HK)
+- GitHub-Pages : [Click Here](https://ranger-hk.github.io/MyProfile/)
 - Site Map : [Click Here](https://www.gloomaps.com/QotefJggVd)
 - Wireframe : [Click Here](https://wireframe.cc/in2M1b)
 - Mockup : [Click Here](https://www.figma.com/file/VaAoHYqNt2DZFkayVIlHoE/My-Web?node-id=0%3A1)
