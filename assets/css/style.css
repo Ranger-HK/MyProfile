@@ -41,9 +41,14 @@ header > nav > ul > li {
 
 }
 
-header > nav > ul > li:hover {
+header > nav > ul > li > a:hover {
     color: #fec51c;
     cursor: pointer;
+}
+
+header > nav > ul > li > a {
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -301,7 +306,10 @@ main > section:nth-child(1) > div > div > div > a > img {
     right: 0px;
     letter-spacing: 5px;
 }
-
+#cv-btn > span > a {
+    color: white;
+    text-decoration: none;
+}
 
 /*SKILLS*/
 
@@ -778,6 +786,39 @@ assignment-btn6> span6 {
     position: relative;
     right: 0px;
     letter-spacing: 5px;
+}
+#activity_btn {
+    position: relative;
+    top: 18%;
+    right: 111px;
+    left: -89px;
+    margin: auto;
+    width: 100px;
+}
+
+.see_more_btn:hover {
+    color: #cb4eff;
+}
+
+.see_more_btn {
+    width: 264px;
+    height: 72px;
+    border: 5px solid #2ae7d0;
+    background-color: #1ee5ce;
+    border-radius: 68px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px 5px rgb(0 0 0 / 25%);
+    color: white;
+    line-height: 34px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Saira Condensed', sans-serif;
+    margin-top: 6px;
+    margin-left: 627px;
+    top: -101px;
+    position: relative
 }
 
 
