@@ -6,7 +6,7 @@
 
 body > header {
     position: relative;
-    height: 70px;
+    height: 65px;
     background-color: #212428;
     box-shadow: 5px 6px 10px 1px rgba(0, 0, 0, 0.062);
     z-index: 1;
@@ -17,14 +17,14 @@ body > header {
 
 header > h2 {
     position: absolute;
-    left: 20px;
-    font-size: 50px;
+    left: 15px;
+    font-size: 45px;
     color: #00FF85;
     margin-right: 20px;
 }
 
 header > nav {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     color: rgb(255, 255, 255);
     margin-right: 30px;
@@ -61,21 +61,20 @@ header > nav > ul > li > a {
 }
 
 #profile {
-    width: 387px;
-    height: 387px;
+    width: 315px;
+    height: 315px;
     background-color: red;
     border-radius: 100%;
     border: 3px solid #FFFFFF;
     box-sizing: border-box;
-    background-image: url("../image/social/MY.jpeg");
+    background-image: url(../image/social/MY.jpeg);
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 50px;
-    margin-top: 350px;
+    margin-left: 35px;
+    margin-top: 312px;
 
 }
-
 
 main > section:nth-child(1) > div > div {
     position: absolute;
@@ -83,17 +82,19 @@ main > section:nth-child(1) > div > div {
     left: 0;
     bottom: 0;
     margin: auto;
-    height: 250px;
-    margin-left: 398px;
+    height: 205px;
+    margin-left: 290px;
     color: white;
+
 }
 
 main > section:nth-child(1) > div > div > h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     display: inline;
     margin-left: 100px;
     margin-top: 10px;
+
 
 }
 
@@ -103,10 +104,10 @@ main > section:nth-child(1) > div > div > h1 > span {
 }
 
 main > section:nth-child(1) > div > div > p {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
     margin-left: 100px;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 main > section:nth-child(1) > div > div > div {
@@ -116,20 +117,22 @@ main > section:nth-child(1) > div > div > div {
 }
 
 main > section:nth-child(1) > div > div > div > a > img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     fill: white;
     margin-right: 20px;
 }
 
 #text {
     position: absolute;
-    width: 350px;
-    height: 350px;
-    left: 1300px;
-    top: 35.85000000000002px;
+    width: 340px;
+    height: 340px;
+    left: 1230px;
+    top: 75px;
     background: radial-gradient(80% 80% at 80% 80%, #cd9b9b 0%, rgba(255, 255, 255, 0) 150%);
-    transform: rotate(0deg);
+    transform: rotate(
+            0deg
+    );
     border: 1px solid #ffffff;
 }
 
@@ -139,48 +142,51 @@ main > section:nth-child(1) > div > div > div > a > img {
     font-family: Roboto;
     font-style: italic;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 35px;
+    line-height: 45px;
     color: #FFFFFF;
 
 }
 
 #line {
     position: absolute;
-    width: 2114px;
-    height: 19px;
+    width: 1903px;
+    height: 18px;
     left: 0px;
-    top: 1110px;
+    top: 1012px;
     background: #F1C40F;
+
 }
 
-#underline{
+#underline {
     position: absolute;
     width: 210px;
-    height: 4px;
-    left: 565px;
-    top: 623px;
+    height: 3px;
+    left: 440px;
+    top: 563px;
     background: #ffffff;
 }
 
 #circle {
-    width: 12px;
-    height: 12px;
-    margin-top: -492px;
-    margin-left: 537px;
+    width: 10px;
+    height: 10px;
+    margin-top: -452px;
+    margin-left: 410px;
     background: #f7f7f7;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     border-radius: 100%;
+
 }
 
 #circle2 {
-    width: 12px;
-    height: 12px;
-    margin-top: -12px;
-    margin-left: 791px;
+    width: 10px;
+    height: 10px;
+    margin-top: -9px;
+    margin-left: 669px;
     background: #f7f7f7;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     border-radius: 100%;
+
 
 }
 
@@ -203,7 +209,7 @@ main > section:nth-child(1) > div > div > div > a > img {
 
 #aboutMe > div > h2 {
     position: relative;
-    font-size: 62px;
+    font-size: 50px;
     color: #EFF0F0;
 }
 
@@ -212,7 +218,7 @@ main > section:nth-child(1) > div > div > div > a > img {
     width: 600px;
     color: #AFB6D2;
     margin-left: 100px;
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 60px;
 }
 
@@ -224,8 +230,7 @@ main > section:nth-child(1) > div > div > div > a > img {
 
 .list {
     padding: 0px;
-    font-size: 20px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .list > li, address > li {
@@ -248,50 +253,53 @@ main > section:nth-child(1) > div > div > div > a > img {
 }
 
 #info > p {
+
     position: relative;
-    width: 1782px;
-    height: 128px;
-    left: 65px;
-    top: 159px;
+    width: 1700px;
+    height: 125px;
+    left: -24px;
+    top: 200px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 35px;
     color: #AFB6D2;
     letter-spacing: 2px;
+    margin-left: 95px;
 }
 
 #img {
-    background-image: url("../image/social/my2.jpg");
+    background-image: url(../image/social/my2.jpg);
     position: absolute;
-    width: 420px;
-    height: 503px;
-    left: 1644px;
-    top: 1272px;
+    width: 360px;
+    height: 450px;
+    left: 1494px;
+    top: 1197px;
     border-radius: 30px;
     background-position: 50%;
     background-size: cover;
+
 
 }
 
 /*button*/
 #cv-btn {
     position: relative;
-    width: 550px;
-    height: 86px;
+    width: 425px;
+    height: 62px;
     border: 5px solid #fec51c;
     background-color: transparent;
-    border-radius: 25px;
+    border-radius: 18px;
     box-sizing: border-box;
     box-shadow: 0px 4px 10px 5px rgb(0 0 0);
     color: #ffffff;
     line-height: 31px;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
     text-align: center;
-    margin-left: 1529px;
-    margin-top: 220px;
+    margin-left: 1430px;
+    margin-top: 250px;
     cursor: pointer;
     margin-right: 0px;
 }
@@ -306,6 +314,7 @@ main > section:nth-child(1) > div > div > div > a > img {
     right: 0px;
     letter-spacing: 5px;
 }
+
 #cv-btn > span > a {
     color: white;
     text-decoration: none;
@@ -331,7 +340,7 @@ main > section:nth-child(1) > div > div > div > a > img {
 
 #Skills > div > h2 {
     position: relative;
-    font-size: 62px;
+    font-size: 50px;
     color: #EFF0F0;
 
 }
@@ -451,12 +460,12 @@ main > section:nth-child(1) > div > div > div > a > img {
 
 #Project > div > h2 {
     position: relative;
-    font-size: 62px;
+    font-size: 50px;
     color: #EFF0F0;
 
 }
 
-#proSlider{
+#proSlider {
     height: 1000px;
     width: 1500px;
     display: flex;
@@ -541,11 +550,10 @@ main > section:nth-child(1) > div > div > div > a > img {
 }
 
 
-
 /*ASSIGNMENTS*/
 
 #Assignments {
-    height: 80vh;
+    height: 100vh;
     background-color: #212428;
 
 
@@ -562,21 +570,22 @@ main > section:nth-child(1) > div > div > div > a > img {
 
 #Assignments > div > h2 {
     position: relative;
-    font-size: 62px;
+    font-size: 50px;
     color: #EFF0F0;
 
 }
 
 #ACircle {
-    width: 450px;
-    height: 450px;
-    margin-top: 99px;
-    margin-left: 121px;
+    width: 400px;
+    height: 400px;
+    margin-top: 151px;
+    margin-left: 68px;
     background: #ffffff;
     border-radius: 100%;
+
 }
 
-.dash{
+.dash {
     box-sizing: content-box;
     height: 10px;
     overflow: visible;
@@ -585,13 +594,15 @@ main > section:nth-child(1) > div > div > div > a > img {
     line-height: 31px;
 
 }
-#A1{
-    top: 4493px;
-    left: 145px;
+
+#A1 {
+    top: 4067px;
+    left: 85px;
     margin: 10px;
     color: #000000;
     position: absolute;
-    font-size: 27px;
+    font-size: 25px;
+
 }
 
 #Li {
@@ -600,17 +611,16 @@ main > section:nth-child(1) > div > div > div > a > img {
     overflow: visible;
     width: 372px;
     margin-top: -88px;
-    top: 4882px;
-    left: 876px;
+    top: 4514px;
+    left: 760px;
     position: absolute;
 }
 
 
-
 #all {
     margin-top: -56px;
-    top: 4383px;
-    left: 59px;
+    top: 4000px;
+    left: -18px;
     position: absolute;
 }
 
@@ -629,12 +639,13 @@ main > section:nth-child(1) > div > div > div > a > img {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
-    margin-left: 1364px;
+    margin-left: 1368px;
     margin-top: -109px;
     margin-right: 72px;
     cursor: pointer;
 
 }
+
 .assignment-btn2 {
     position: relative;
     width: 469px;
@@ -674,6 +685,7 @@ main > section:nth-child(1) > div > div > div > a > img {
     margin-right: 72px;
     cursor: pointer;
 }
+
 .assignment-btn4 {
     position: relative;
     width: 469px;
@@ -693,6 +705,7 @@ main > section:nth-child(1) > div > div > div > a > img {
     margin-right: 72px;
     cursor: pointer;
 }
+
 .assignment-btn5 {
     position: relative;
     width: 469px;
@@ -712,6 +725,7 @@ main > section:nth-child(1) > div > div > div > a > img {
     margin-right: 72px;
     cursor: pointer;
 }
+
 .assignment-btn6 {
     position: relative;
     width: 469px;
@@ -735,58 +749,69 @@ main > section:nth-child(1) > div > div > div > a > img {
 .assignment-btn1:hover {
     background-color: #FEC51C;
 }
+
 .assignment-btn2:hover {
     background-color: #FEC51C;
 }
+
 .assignment-btn3:hover {
     background-color: #FEC51C;
 }
+
 .assignment-btn4:hover {
     background-color: #FEC51C;
 }
+
 .assignment-btn5:hover {
     background-color: #FEC51C;
 }
+
 .assignment-btn6:hover {
     background-color: #FEC51C;
 }
 
-.assignment-btn1> span1 {
+.assignment-btn1 > span1 {
     text-transform: capitalize;
     position: relative;
     right: 0px;
     letter-spacing: 5px;
 }
-assignment-btn2> span2 {
+
+assignment-btn2 > span2 {
     text-transform: capitalize;
     position: relative;
     right: 0px;
     letter-spacing: 5px;
 }
-assignment-btn3> span3 {
+
+assignment-btn3 > span3 {
     text-transform: capitalize;
     position: relative;
     right: 0px;
     letter-spacing: 5px;
 }
-assignment-btn4> span4 {
+
+assignment-btn4 > span4 {
     text-transform: capitalize;
     position: relative;
     right: 0px;
     letter-spacing: 5px;
 }
-assignment-btn5> span5 {
+
+assignment-btn5 > span5 {
     text-transform: capitalize;
     position: relative;
     right: 0px;
     letter-spacing: 5px;
 }
-assignment-btn6> span6 {
+
+assignment-btn6 > span6 {
     text-transform: capitalize;
     position: relative;
     right: 0px;
     letter-spacing: 5px;
 }
+
 #activity_btn {
     position: relative;
     top: 18%;
@@ -801,23 +826,23 @@ assignment-btn6> span6 {
 }
 
 .see_more_btn {
-    width: 264px;
-    height: 72px;
+    width: 280px;
+    height: 68px;
     border: 5px solid #2ae7d0;
     background-color: #1ee5ce;
-    border-radius: 68px;
+    border-radius: 34px;
     box-sizing: border-box;
     box-shadow: 0px 4px 10px 5px rgb(0 0 0 / 25%);
     color: white;
     line-height: 34px;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
     font-family: 'Saira Condensed', sans-serif;
-    margin-top: 6px;
-    margin-left: 627px;
-    top: -101px;
+    margin-top: -20px;
+    margin-left: 663px;
+    top: -64px;
     position: relative
 }
 
@@ -825,7 +850,7 @@ assignment-btn6> span6 {
 /*HOBBIES*/
 
 #Hobbies {
-    height: 150vh;
+    height: 170vh;
     background-color: #212428;
 
 
@@ -842,17 +867,18 @@ assignment-btn6> span6 {
 
 #Hobbies > div > h2 {
     position: relative;
-    font-size: 62px;
+    font-size: 50px;
     color: #EFF0F0;
 
 }
+
 #imgH1 {
     background-image: url("../image/hobbies/red dead redemption.png");
     position: absolute;
     width: 521px;
     height: 295px;
-    left: 64px;
-    top: 5274px;
+    left: 57px;
+    top: 4935px;
     border-radius: 20px;
 
 }
@@ -862,8 +888,8 @@ assignment-btn6> span6 {
     position: absolute;
     width: 521px;
     height: 295px;
-    left: 64px;
-    top: 5665px;
+    left: 57px;
+    top: 5322px;
     border-radius: 20px;
 
 }
@@ -873,8 +899,8 @@ assignment-btn6> span6 {
     position: absolute;
     width: 521px;
     height: 295px;
-    left: 64px;
-    top: 6057px;
+    left: 57px;
+    top: 5709px;
     border-radius: 20px;
 }
 
@@ -883,8 +909,8 @@ assignment-btn6> span6 {
     position: absolute;
     width: 521px;
     height: 295px;
-    left: 803px;
-    top: 5274px;
+    left: 691px;
+    top: 4935px;
     border-radius: 20px;
 }
 
@@ -893,8 +919,8 @@ assignment-btn6> span6 {
     position: absolute;
     width: 521px;
     height: 295px;
-    left: 803px;
-    top: 5665px;
+    left: 691px;
+    top: 5322px;
     border-radius: 20px;
 }
 
@@ -903,8 +929,8 @@ assignment-btn6> span6 {
     position: absolute;
     width: 521px;
     height: 295px;
-    left: 803px;
-    top: 6057px;
+    left: 691px;
+    top: 5709px;
     border-radius: 20px;
 }
 
@@ -913,8 +939,8 @@ assignment-btn6> span6 {
     position: absolute;
     width: 521px;
     height: 295px;
-    left: 1534px;
-    top: 5274px;
+    left: 1332px;
+    top: 4935px;
     border-radius: 20px;
 }
 
@@ -923,8 +949,8 @@ assignment-btn6> span6 {
     position: absolute;
     width: 521px;
     height: 295px;
-    left: 1534px;
-    top: 5665px;
+    left: 1332px;
+    top: 5322px;
     border-radius: 20px;
 }
 
@@ -933,15 +959,16 @@ assignment-btn6> span6 {
     position: absolute;
     width: 521px;
     height: 295px;
-    left: 1534px;
-    top: 6057px;
+    left: 1332px;
+    top: 5709px;
     border-radius: 20px;
 }
 
 
 .games {
+
     position: relative;
-    width: 469px;
+    width: 400px;
     height: 61px;
     border: 5px solid #fec51c;
     background-color: transparent;
@@ -953,12 +980,11 @@ assignment-btn6> span6 {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
-    margin-left: 77px;
+    margin-left: 124px;
     margin-top: -109px;
     margin-right: 72px;
     cursor: pointer;
     top: 55px;
-
 
 }
 
@@ -968,7 +994,7 @@ assignment-btn6> span6 {
 }
 
 
-games> span1 {
+games > span1 {
     text-transform: capitalize;
     position: relative;
     right: 0px;
@@ -977,8 +1003,9 @@ games> span1 {
 
 
 .movies {
+
     position: relative;
-    width: 469px;
+    width: 400px;
     height: 61px;
     border: 5px solid #fec51c;
     background-color: transparent;
@@ -990,7 +1017,7 @@ games> span1 {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
-    margin-left: 195px;
+    margin-left: 155px;
     margin-top: -109px;
     margin-right: 72px;
     cursor: pointer;
@@ -998,13 +1025,12 @@ games> span1 {
 }
 
 
-
 .movies:hover {
     background-color: #FEC51C;
 }
 
 
-movies> span2 {
+movies > span2 {
     text-transform: capitalize;
     position: relative;
     right: 0px;
@@ -1014,7 +1040,7 @@ movies> span2 {
 
 .sports {
     position: relative;
-    width: 469px;
+    width: 400px;
     height: 61px;
     border: 5px solid #fec51c;
     background-color: transparent;
@@ -1026,7 +1052,7 @@ movies> span2 {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
-    margin-left: 1565px;
+    margin-left: 1402px;
     margin-top: -109px;
     margin-right: 72px;
     cursor: pointer;
@@ -1041,7 +1067,7 @@ movies> span2 {
 }
 
 
-sports> span3 {
+sports > span3 {
     text-transform: capitalize;
     position: relative;
     right: 0px;
@@ -1049,10 +1075,11 @@ sports> span3 {
 }
 
 #croseLine > h1 {
+
     width: 4px;
     height: 1276px;
     top: -45px;
-    left: 679px;
+    left: 628px;
     position: relative;
     background-color: #C4CFDE;
 }
@@ -1061,13 +1088,12 @@ sports> span3 {
 #croseLine > h2 {
     width: 4px;
     height: 1276px;
-    top: -1372px;
-    left: 1435px;
+    top: -1352px;
+    left: 1270px;
     position: relative;
     background-color: #C4CFDE;
 
 }
-
 
 
 /*CONTACTS*/
@@ -1090,46 +1116,53 @@ sports> span3 {
 
 #Contacts > div > h2 {
     position: relative;
-    font-size: 62px;
+    font-size: 50px;
     color: #EFF0F0;
 
 }
+
 #imgC {
     background-image: url("../image/social/imgC.png");
     position: absolute;
-    width: 751px;
-    height: 719px;
-    left: 107px;
-    top: 6751px;
+    width: 650px;
+    height: 600px;
+    left: 147px;
+    top: 6463px;
     border-radius: 20px;
 
 }
+
 #imgC > div > p {
-    font-size: 45px;
+
+    font-size: 40px;
     font-weight: 300;
     color: white;
-    margin-top: 145px;
+    margin-top: 112px;
     margin-left: 30px;
     text-shadow: 0px 10px 5px rgba(0, 0, 0, 0.5);
+
 }
 
 #bottom {
+
     position: relative;
-    width: 826px;
+    width: 820px;
     border-radius: 20px;
     display: block;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
-    margin-left: 1105px;
-    margin-top: 39px;
-    height: 500px;
+    margin-left: 1073px;
+    margin-top: 0px;
+    height: 463px;
 }
 
 
 .bottom_card {
-    width: 800px;
-    height: 209px;
+
+    width: 750px;
+    height: 170px;
+    margin-top: 107px;
     background: #212428;
     background: #212428;
     box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 25%);
@@ -1139,8 +1172,9 @@ sports> span3 {
 
 
 .icon_title {
+
     position: relative;
-    top: 40px;
+    top: -9px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1154,7 +1188,7 @@ sports> span3 {
     margin: 0;
     margin-left: -599px;
     margin-top: 48px;
-    font-size: 60px
+    font-size: 60px;
 
 }
 
@@ -1176,31 +1210,33 @@ sports> span3 {
 }
 
 .bottom_card > div:nth-child(2) {
+
     position: relative;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 38px;
     line-height: 28px;
     text-align: center;
     color: #c4cfde;
     bottom: -100px;
-    top: -5px;
-    margin-left: 95px;
+    top: -55px;
+    margin-left: 100px;
 }
 
 #social_icon_div {
-    width: 816px;
-    height: 202px;
+
+    width: 750px;
+    height: 170px;
     background: #212428;
     box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 25%);
     border-radius: 20px;
     position: relative;
-    margin-left: 1101px;
+    margin-left: 1113px;
     display: inline-flex;
-    left: -3px;
+    left: -36px;
     top: 35px;
     justify-content: space-around;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 67px;
     margin-bottom: 48px;
 }
 
@@ -1244,6 +1280,7 @@ sports> span3 {
 #icon_5:hover {
     background-color: #fe1c1c;
 }
+
 bottom_card {
 
 }
@@ -1251,14 +1288,15 @@ bottom_card {
 
 /*FOOTER*/
 
-#line1{
+#line1 {
+
     position: absolute;
     width: 1973px;
-    height: 2px;
-    left: 24px;
-    top: 7834px;
+    height: 3px;
+    left: -109px;
+    top: 7438px;
     background: #ffffff;
-    margin-left:39px;
+    margin-left: 39px;
 }
 
 
@@ -1296,12 +1334,12 @@ bottom_card {
 
 }
 
-#footer_p > a{
+#footer_p > a {
     text-decoration: none;
     color: #ffffff;
 }
 
-#footer_p > a:visited{
+#footer_p > a:visited {
     text-decoration: none;
     color: #ffffff;
 }
@@ -1314,7 +1352,7 @@ bottom_card {
     line-height: 64px;
     color: #ff9f28;
     margin-top: -332px;
-    margin-left: 865px;
+    margin-left: 747px;
 }
 
 #coporation {
@@ -1325,6 +1363,6 @@ bottom_card {
     line-height: 64px;
     color: #0095ff;
     margin-top: -121px;
-    margin-left: 1048px;
+    margin-left: 930px;
 }
 
