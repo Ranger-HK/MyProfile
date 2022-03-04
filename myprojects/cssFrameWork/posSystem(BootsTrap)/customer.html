@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>POS System - Customer</title>
     <link href="assets/bootsTrap/css/bootstrap.min.css" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
-<body>
+<body style="background-color: #ecf0f1;">
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="customer.html">
-                <img src="assets/image/img.png" alt="logo" width="100" height="100">
+                <img src="assets/image/LOGO.png" alt="logo" width="184" height="48">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -44,7 +44,7 @@
     <div class="row g-3 align-items-center pb-3 justify-content-between">
         <div class="col-12 col-md-6 col xl col-xl-6">
             <div class="input-group mb-3" style="margin-top: 30px">
-                <input type="text" class="form-control" placeholder="search Customer"
+                <input type="text" class="form-control" placeholder="Search Customer"
                        aria-label="Example text with button addon" aria-describedby="button-addon1" id="txtSearch">
                 <button type="button" class="btn btn-success" id="btnSearch"><i
                         class="bi bi-search m-2"></i>Search
@@ -79,40 +79,38 @@
                 <input class="form-control" id="txtCusTP" placeholder="Customer Telephone Number" type="text">
             </div>
         </div>
-        <div class="row align-items-center pt-3 ">
-            <div class="col-12 mt-2 ">
-                <div class="table-responsive " style="height: 70vh">
-                    <table class="table table-success table-striped">
-                        <thead>
-                        <tr>
-                            <th scope="col">Customer Id</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Address</th>
-                            <th scope="col">Telephone</th>
-                        </tr>
-                        <tr>
-                            <th scope="row">C001</th>
-                            <td>Ravindu</td>
-                            <td>270/C</td>
-                            <td>0764618605</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">C002</th>
-                            <td>Prathibha</td>
-                            <td>Bandaragama</td>
-                            <td>0710832455</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">C003</th>
-                            <td>Buli</td>
-                            <td>Kadawatha</td>
-                            <td>0768605435</td>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
-                </div>
+        <div class="row">
+            <div class="table-responsive" style="height: 40vh;">
+                <table class="table table-striped">
+                    <thead class="" style="background-color: #16a085;">
+                    <tr>
+                        <th scope="col">Customer Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Telephone</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">C001</th>
+                        <td>Ravindu</td>
+                        <td>270/C</td>
+                        <td>0764618605</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">C002</th>
+                        <td>Prathibha</td>
+                        <td>Bandaragama</td>
+                        <td>0710832455</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">C003</th>
+                        <td>Buli</td>
+                        <td>Kadawatha</td>
+                        <td>0768605435</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
