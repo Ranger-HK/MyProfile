@@ -43,10 +43,31 @@ function loadAllCustomer(){
 
     }
 }
-
+// ClearMethod
 function clearFiled(){
     $("#txtCusID,#txtCusName,#txtCusAddress,#txtCusTP").val("");
 }
 
 
 // searchCustomer
+$("#btnSearch").click(function (){
+    var searchId = $("#txtSearch").val();
+    var response = searchCustomer(searchId);
+    if (response){
+        $("#txtCusID").val(response.id);
+        $("#txtCusName").val(response.name);
+        $("#txtCusAddress").val(response.address);
+        $("#txtCusTP").val(response.telephoneNumber);
+    }else {
+        clearFiled();
+        alert("Invalid Customer Name");
+    }
+});
+
+function searchCustomer(id){
+    for (let i = 0 ; i < customerDB.length; i++){
+        if (customerDB[i].id==id){
+            return customerDB[i];
+        }
+    }
+}
