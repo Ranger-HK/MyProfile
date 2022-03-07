@@ -71,3 +71,21 @@ function searchCustomer(id){
         }
     }
 }
+//text fields focusing
+$("#txtCusID").keydown(function (event) {
+    if (event.key == "Enter") {
+        $("#txtCusName").focus();
+    }
+});
+
+$("#txtCusName").keydown(function (event) {
+    if (event.key == "Enter") {
+        $("#txtCusAddress").focus();
+    }
+});
+
+$("#txtCusAddress").keydown(function (event) {
+    if (event.key == "Enter") {
+        $("#txtCusTP").focus();
+    }
+});
