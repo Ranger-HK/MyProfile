@@ -8,15 +8,19 @@ $("#btnAdd").click(function (){
     let customerAddress=$("#txtCusAddress").val();
     let customerTP=$("#txtCusTP").val();
 
-    var customerOB={
+   /* var customerOB={
         id:customerId,
         name:customerName,
         address:customerAddress,
         telephoneNumber:customerTP
-    };
+    };*/
+
+    var customerOB=new CustomerDTO(customerId,customerName,customerAddress,customerTP);
+
     customerDB.push(customerOB);
-    loadAllCustomer();
     clearFiled();
+    loadAllCustomer();
+
 
     // textfiled click set
     $("#tbltBody>tr").click(function (){
@@ -38,7 +42,7 @@ $("#btnAdd").click(function (){
 function loadAllCustomer(){
     $("#tbltBody").empty();
     for (var i of customerDB){
-        let row = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.address}</td><td>${i.telephoneNumber}</td></tr>`
+        let row = `<tr><td>${i.getCustomerID()}</td><td>${i.getCustomerName()}</td><td>${i.getCustomerAddress()}</td><td>${i.getCustomerTelephoneNumber()}</td></tr>`
         $("#tbltBody").append(row);
 
     }
@@ -48,16 +52,30 @@ function clearFiled(){
     $("#txtCusID,#txtCusName,#txtCusAddress,#txtCusTP").val("");
 }
 
+$("#btnUpdate").click(function (){
+    let customerId=$("#txtCusID").val();
+    let customerName=$("#txtCusName").val();
+    let customerAddress=$("#txtCusAddress").val();
+    let customerTP=$("#txtCusTP").val();
+
+    for (var i=0; i < customerDB.length; i++){
+        customerDB[i].setCustomerID(customerId);
+        customerDB[i].setCustomerName(customerName);
+        customerDB[i].setCustomerAddress(customerAddress);
+        customerDB[i].setCustomerTelephoneNumber(customerTP);
+    }
+    loadAllCustomer();
+});
 
 // searchCustomer
 $("#btnSearch").click(function (){
     var searchId = $("#txtSearch").val();
     var response = searchCustomer(searchId);
     if (response){
-        $("#txtCusID").val(response.id);
-        $("#txtCusName").val(response.name);
-        $("#txtCusAddress").val(response.address);
-        $("#txtCusTP").val(response.telephoneNumber);
+        $("#txtCusID").val(response.getCustomerID());
+        $("#txtCusName").val(response.getCustomerName());
+        $("#txtCusAddress").val(response.getCustomerAddress());
+        $("#txtCusTP").val(response.getCustomerTelephoneNumber());
     }else {
         clearFiled();
         alert("Invalid Customer Name");
@@ -66,7 +84,7 @@ $("#btnSearch").click(function (){
 
 function searchCustomer(id){
     for (let i = 0 ; i < customerDB.length; i++){
-        if (customerDB[i].id==id){
+        if (customerDB[i].getCustomerID()==id){
             return customerDB[i];
         }
     }
