@@ -108,10 +108,6 @@ function clearFiled() {
     $("#txtItemID,#txtItemName,#txtItemQty,#txtItemPrice").val("");
 }
 
-function clearFiled() {
-    $("#txtItemID,#txtItemName,#txtItemQty,#txtItemPrice").val("");
-}
-
 $("#btnItemClear").click(function () {
     clearFiled()
 });
