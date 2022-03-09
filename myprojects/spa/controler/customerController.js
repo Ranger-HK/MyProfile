@@ -112,6 +112,10 @@ function clearField() {
 }
 
 
+$("#btnClear").click(function () {
+    clearField();
+});
+
 //text fields focusing
 $("#txtCusID").keydown(function (event) {
     if (event.key == "Enter") {
@@ -131,9 +135,6 @@ $("#txtCusAddress").keydown(function (event) {
     }
 });
 
-$("#btnClear").click(function () {
-    clearField();
-});
 
 
 

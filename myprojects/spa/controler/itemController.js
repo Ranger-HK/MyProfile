@@ -1,77 +1,118 @@
-
-
 // Item
 
 // add
-$("#btnItemAdd").click(function (){
+$("#btnItemAdd").click(function () {
 
-    let itemId=$("#txtItemID").val();
-    let itemName=$("#txtItemName").val();
-    let itemQty=$("#txtItemQty").val();
-    let itemPrice=$("#txtItemPrice").val();
+    let itemId = $("#txtItemID").val();
+    let itemName = $("#txtItemName").val();
+    let itemQty = $("#txtItemQty").val();
+    let itemPrice = $("#txtItemPrice").val();
 
-    var itemOB={
-        id:itemId,
-        name:itemName,
-        qty:itemQty,
-        price:itemPrice
-    };
+    var itemOB = new ItemDTO(itemId, itemName, itemQty, itemPrice);
+
+
     itemDB.push(itemOB);
     loadAllItem();
-    clearFiled();
+    clearFiled()
 
-    // textfiled click set
-    $("#tbltBodyItem>tr").click(function (){
-        let itemId=$(this).children(":eq(0)").text();
-        let itemName=$(this).children(":eq(1)").text();
-        let itemQty=$(this).children(":eq(2)").text();
-        let itemPrice=$(this).children(":eq(3)").text();
+});
+
+// textfiled click set
+function setItem() {
+    $("#tbltBodyItem>tr").click(function () {
+        let itemId = $(this).children(":eq(0)").text();
+        let itemName = $(this).children(":eq(1)").text();
+        let itemQty = $(this).children(":eq(2)").text();
+        let itemPrice = $(this).children(":eq(3)").text();
 
         $("#txtItemID").val(itemId);
         $("#txtItemName").val(itemName);
         $("#txtItemQty").val(itemQty);
         $("#txtItemPrice").val(itemPrice);
     });
-
-});
+}
 
 // table load
-function loadAllItem(){
+function loadAllItem() {
     $("#tbltBodyItem").empty();
-    for (var i of itemDB){
-        let row = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.Qty}</td><td>${i.Price}</td></tr>`
+    for (var i of itemDB) {
+        let row = `<tr><td>${i.getitemId()}</td><td>${i.getitemName()}</td><td>${i.getitemQty()}</td><td>${i.getitemPrice()}</td></tr>`
         $("#tbltBodyItem").append(row);
+        setItem();
+        deleteItem();
 
     }
 }
-// ClearMethod
-function clearFiled(){
-    $("#txtItemID,#txtItemName,#txtItemQty,#txtItemPrice").val("");
+
+// itemDelete
+function deleteItem() {
+    $("#btnItemDelete").click(function () {
+        let getClickData = $("#txtItemID").val();
+        for (let i = 0; i < itemDB.length; i++) {
+            if (itemDB[i].getitemId() == getClickData) {
+                itemDB.splice(i, 1)
+            }
+        }
+        loadAllItem();
+        clearFiled()
+    });
 }
 
 
-// searchCustomer
-$("#btnItemSearch").click(function (){
+// itemUpdate
+$("#btnItemUpdate").click(function () {
+    let itemId = $("#txtItemID").val();
+    let itemName = $("#txtItemName").val();
+    let itemQty = $("#txtItemQty").val();
+    let itemPrice = $("#txtItemPrice").val();
+
+    for (var i = 0; i < itemDB.length; i++) {
+        if (itemDB[i].getitemId() == itemId) {
+            itemDB[i].setitemName(itemName);
+            itemDB[i].setitemQty(itemQty);
+            itemDB[i].setitemPrice(itemPrice);
+        }
+
+    }
+    loadAllItem();
+    clearFiled()
+});
+
+
+// searchItem
+$("#btnItemSearch").click(function () {
     var searchId = $("#txtSearchItem").val();
     var response = searchItem(searchId);
-    if (response){
-        $("#txtItemID").val(response.id);
-        $("#txtItemName").val(response.name);
-        $("#txtItemQty").val(response.qty);
-        $("#txtItemPrice").val(response.price);
-    }else {
-        clearFiled();
+    if (response) {
+        $("#txtItemID").val(response.getitemId());
+        $("#txtItemName").val(response.getitemName());
+        $("#txtItemQty").val(response.getitemQty());
+        $("#txtItemPrice").val(response.getitemPrice());
+    } else {
+        clearFiled()
         alert("Invalid Item Name");
     }
 });
 
-function searchItem(id){
-    for (let i = 0 ; i < itemDB.length; i++){
-        if (itemDB[i].id==id){
+function searchItem(id) {
+    for (let i = 0; i < itemDB.length; i++) {
+        if (itemDB[i].getitemId() == id) {
             return itemDB[i];
         }
     }
 }
+
+
+// ClearMethod
+function clearFiled() {
+    $("#txtItemID,#txtItemName,#txtItemQty,#txtItemPrice").val("");
+}
+
+
+$("#btnItemClear").click(function () {
+    clearFiled()
+});
+
 //text fields focusing
 $("#txtItemID").keydown(function (event) {
     if (event.key == "Enter") {
@@ -90,3 +131,4 @@ $("#txtItemQty").keydown(function (event) {
         $("#txtItemPrice").focus();
     }
 });
+
