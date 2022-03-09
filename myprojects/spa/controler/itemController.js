@@ -109,11 +109,6 @@ function clearFiled() {
 }
 
 
-// ClearMethod
-function clearFiled() {
-    $("#txtItemID,#txtItemName,#txtItemQty,#txtItemPrice").val("");
-}
-
 $("#btnItemClear").click(function () {
     clearFiled()
 });
