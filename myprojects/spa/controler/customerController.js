@@ -1,6 +1,8 @@
 // Customer
 
 // add customer
+generateId();
+
 $("#btnAdd").click(function () {
 
     let customerId = $("#txtCusID").val();
@@ -14,6 +16,8 @@ $("#btnAdd").click(function () {
     customerDB.push(customerOB);
     loadAllCustomer();
     clearField();
+    generateId();
+
 
 
 });
@@ -134,6 +138,27 @@ $("#txtCusAddress").keydown(function (event) {
         $("#txtCusTP").focus();
     }
 });
+
+function generateId() {
+    let index = customerDB.length - 1;
+    let id;
+    let temp;
+    if (index != -1) {
+        id = customerDB[customerDB.length - 1].getCustomerID();
+        temp = id.split("-")[1];
+        temp++;
+    }
+
+    if (index == -1) {
+        $("#txtCusID").val("C00-001");
+    } else if (temp <= 9) {
+        $("#txtCusID").val("C00-00" + temp);
+    } else if (temp <= 99) {
+        $("#txtCusID").val("C00-0" + temp);
+    } else {
+        $("#txtCusID").val("C00-" + temp);
+    }
+}
 
 
 
