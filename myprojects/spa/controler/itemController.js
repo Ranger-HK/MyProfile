@@ -1,6 +1,7 @@
 // Item
 
 // add
+generateItemId();
 $("#btnItemAdd").click(function () {
 
     let itemId = $("#txtItemID").val();
@@ -13,7 +14,10 @@ $("#btnItemAdd").click(function () {
 
     itemDB.push(itemOB);
     loadAllItem();
-    clearFiled()
+    clearFiled();
+    generateItemId();
+
+
 
 });
 
@@ -132,3 +136,23 @@ $("#txtItemQty").keydown(function (event) {
     }
 });
 
+function generateItemId() {
+    let index = itemDB.length - 1;
+    let id;
+    let temp;
+    if (index != -1) {
+        id = itemDB[itemDB.length - 1].getitemId();
+        temp = id.split("-")[1];
+        temp++;
+    }
+
+    if (index == -1) {
+        $("#txtItemID").val("I00-001");
+    } else if (temp <= 9) {
+        $("#txtItemID").val("I00-00" + temp);
+    } else if (temp <= 99) {
+        $("#txtItemID").val("I00-0" + temp);
+    } else {
+        $("#txtItemID").val("I00-" + temp);
+    }
+}
