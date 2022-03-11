@@ -22,13 +22,6 @@ $("#btnAdd").click(function () {
 
 
 
-
-
-
-
-
-
-
 });
 
 // textfiled click set
