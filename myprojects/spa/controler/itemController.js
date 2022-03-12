@@ -16,6 +16,7 @@ $("#btnItemAdd").click(function () {
     loadAllItem();
     clearFiled();
     generateItemId();
+    loadAllItemIds();
 
 
 

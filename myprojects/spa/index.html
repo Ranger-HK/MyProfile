@@ -177,7 +177,7 @@
                         <div class="row">
                             <div class="col">
                                 <label class="form-label fw-bold" for="oId">Order ID:</label>
-                                <input class="form-control" id="oId" placeholder="O001" type="text">
+                                <input class="form-control" id="oId" placeholder="" type="text">
                             </div>
                             <div class="col">
                                 <label class="form-label fw-bold" for="iDate">Date:</label>
@@ -188,25 +188,21 @@
                             <div class="col">
                                 <label class="form-label fw-bold" for="idCmb">Customer ID:</label>
                                 <select class="form-select" id="idOrderCmb">
-                                    <option selected>C001</option>
-                                    <option value="1">C001</option>
-                                    <option value="2">C002</option>
-                                    <option value="3">C003</option>
                                 </select>
                             </div>
                             <div class="col">
                                 <label class="form-label fw-bold" for="cusName">Customer Name:</label>
-                                <input class="form-control" id="cusName" placeholder="Name" type="text">
+                                <input class="form-control" id="cusName" placeholder="" type="text">
                             </div>
                         </div>
                         <div class="row mt-3 mb-3">
                             <div class="col">
-                                <label class="form-label fw-bold" for="salary">Salary:</label>
-                                <input class="form-control" id="salary" placeholder="100000" type="number">
+                                <label class="form-label fw-bold" for="TelephoneNumber">TelephoneNumber:</label>
+                                <input class="form-control" id="TelephoneNumber" placeholder="" type="text">
                             </div>
                             <div class="col">
                                 <label class="form-label fw-bold" for="address">Address:</label>
-                                <input class="form-control" id="address" placeholder="Address" type="text">
+                                <input class="form-control" id="address" placeholder="" type="text">
                             </div>
                         </div>
                     </div>
@@ -225,32 +221,29 @@
                             <div class="col">
                                 <label class="form-label fw-bold" for="idCmb">Item:</label>
                                 <select class="form-select" id="idCmb">
-                                    <option selected>I001</option>
-                                    <option value="1">I001</option>
-                                    <option value="2">I002</option>
-                                    <option value="3">I003</option>
+
                                 </select>
                             </div>
                             <div class="col">
                                 <label class="form-label fw-bold" for="itemName">Item Name:</label>
-                                <input class="form-control" id="itemName" placeholder="Mouse" type="text">
+                                <input class="form-control" id="itemName" placeholder="" type="text">
                             </div>
                         </div>
                         <div class="row mt-3">
 
                             <div class="col">
                                 <label class="form-label fw-bold" for="qtyOnHand">Qty On Hand:</label>
-                                <input class="form-control" id="qtyOnHand" placeholder="100" type="number">
+                                <input class="form-control" id="qtyOnHand" placeholder="" type="text">
                             </div>
                             <div class="col">
                                 <label class="form-label fw-bold" for="price">Price:</label>
-                                <input class="form-control" id="price" placeholder="2000" type="text">
+                                <input class="form-control" id="price" placeholder="" type="text">
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col">
                                 <label class="form-label fw-bold" for="oQty">Order Quantity:</label>
-                                <input class="form-control" id="oQty" placeholder="1" type="number">
+                                <input class="form-control" id="oQty" placeholder="" type="number">
                             </div>
                         </div>
                         <div class="row mt-3 mb-1">
@@ -324,27 +317,6 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th>I001</th>
-                    <td>Apple</td>
-                    <td>100</td>
-                    <td>2</td>
-                    <td>2000</td>
-                </tr>
-                <tr>
-                    <th>I002</th>
-                    <td>Milk</td>
-                    <td>700</td>
-                    <td>4</td>
-                    <td>3000</td>
-                </tr>
-                <tr>
-                    <th>I003</th>
-                    <td>Chocolate</td>
-                    <td>500</td>
-                    <td>4</td>
-                    <td>2000</td>
-                </tr>
                 </tbody>
             </table>
         </div>
@@ -355,7 +327,10 @@
 <script src="db/DB.js"></script>
 <script src="controler/customerController.js"></script>
 <script src="controler/itemController.js"></script>
+<script src="controler/orderController.js"> </script>
 <script src="model/CustomerDTO.js"></script>
 <script src="model/ItemDTO.js"></script>
+<script src="model/OrderDTO.js"></script>
+
 </body>
 </html>
