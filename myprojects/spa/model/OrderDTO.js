@@ -43,3 +43,11 @@ function OrderDTO(orderId,itemId,customerId,date,discount,total){
         return total;
     }
 }
+
+
+
+
+
+
+
+
